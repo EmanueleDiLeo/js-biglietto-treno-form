@@ -13,60 +13,68 @@
   <!-- START MAIN -->
   <main class="container">
     
-  <!-- START FORM -->
+  <!-- START SECTION FORM -->
   <section>
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
     <!-- START FORM TICKET -->
     <div>
 
-      <!-- START ROW -->
-      <div class="row">
-
-        <!-- START COL -->
-        <div class="col">
-          <label for="name">Nome Cognome</label>
-          <input type="text" id="name" name="name" placeholder="name">
-        </div>
-        <!-- END COL -->
-
-        <!-- START COL -->
-        <div class="col">
-          <label for="km">Km da percorrere</label>
-          <input type="number" id="km" name="km" placeholder="Km">
-        </div>
-        <!-- END COL -->
-
-        <!-- START COL -->
-        <div class="col">
-          <label for="age">Fascia d'età</label>
-          <option value=""></option>
-          <option value="1">Minorenne</option>
-          <option value="2">Maggiorenne</option>
-          <option value="3">Over 65</option>
-        </div>
-        <!-- END COL -->
-
-      </div>
-      <!-- END ROW -->
-
-      <!-- START BOTTONS -->
-      <div>
+      <!-- START FORM -->
+      <form action="#" method="POST">
         
-      </div>
-      <!-- END BOTTONS -->
+        <!-- START ROW -->
+        <div class="row">
+
+          <!-- START COL -->
+          <div class="col">
+            <label for="name">Nome Cognome</label>
+            <input type="text" id="name" name="name" placeholder="name">
+          </div>
+          <!-- END COL -->
+
+          <!-- START COL -->
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" id="km" name="km" placeholder="Km">
+          </div>
+          <!-- END COL -->
+
+          <!-- START COL -->
+          <div class="col">
+            <label for="age">Fascia d'età</label>
+            <select name="age" id="age">
+              <option value="1">Maggiorenne</option>
+              <option value="2">Minorenne</option>
+              <option value="3">Over 65</option>
+            </select>
+          </div>
+          <!-- END COL -->
+
+        </div>
+        <!-- END ROW -->
+
+        <!-- START BOTTONS -->
+        <div>
+          <button id="create" class="">Genera</button>
+          <button id="delete" class="">Annulla</button>
+        </div>
+        <!-- END BOTTONS -->
+
+      </form>
+      <!-- END FORM -->
 
     </div>
     <!-- END FORM TICKET -->
 
   </section>
-  <!-- END FORM -->
+  <!-- END SECTION FORM -->
 
 
 
   <!-- START TICKET -->
-  <section>
-    <h2></h2>
+  <section id="ticket" class="">
+    <h2>IL TUO BIGLIETTO</h2>
     <div>
 
     </div>
