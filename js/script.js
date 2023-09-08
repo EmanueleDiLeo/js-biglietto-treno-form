@@ -2,9 +2,9 @@ const buttonCreate = document.getElementById("create")
 
 buttonCreate.addEventListener("click", function(){
 
-  let name = document.getElementById("name")
-  let kilometres = parseInt(document.getElementById("km"));
-  let age = document.getElementById("age");
+  let name = document.getElementById("name").value;
+  let kilometres = parseInt(document.getElementById("km")).value;
+  let age = document.getElementById("age").value;
   let check = true;
   let message;
   let price;
@@ -24,7 +24,7 @@ buttonCreate.addEventListener("click", function(){
     if(age === "Over 65"){
       price*= 0.8;
     }
-    
+
     message = "IL TUO BIGLIETTO"
     console.log(price);
   }
