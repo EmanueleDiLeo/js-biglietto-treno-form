@@ -25,6 +25,13 @@ main{
   border-radius: 20px;
 }
 
+input,
+select{
+  border: 2px solid rgb(185, 20, 80);
+  outline: none;
+  border-radius: 5px;
+}
+
 .my_btn{
   padding: 6px 20px;
 }

@@ -29,7 +29,7 @@ buttonCreate.addEventListener("click", function(){
     }
 
     if(age === "over 65"){
-      price *= 0.8;
+      price *= 0.6;
       offer = "Biglietto Over 65";
     }
 
