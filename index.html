@@ -4,41 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   <!-- MY-STYLE -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <title>Biglietto</title>
 </head>
 <body>
   <!-- START MAIN -->
-  <main class="container">
+  <main>
     
   <!-- START SECTION FORM -->
-  <section>
-    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+  <section class="form">
+    <h2 class="text-center pb-3 fs-1">CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2>
 
     <!-- START BG-FORM -->
-    <div>
+    <div class="my_container bg_form">
 
       <!-- START ROW -->
-      <div class="row">
+      <div class="row justify-content-center px-5 ">
 
         <!-- START COL -->
-        <div class="col">
+        <div class="col-10 col-lg-4 d-flex flex-column p-3">
           <label for="name">Nome Cognome</label>
           <input type="text" id="name" name="name" placeholder="name">
         </div>
         <!-- END COL -->
 
         <!-- START COL -->
-        <div class="col">
+        <div class="col-10 col-lg-4 d-flex flex-column p-3">
           <label for="km">Km da percorrere</label>
           <input type="number" id="km" name="km" placeholder="Km">
         </div>
         <!-- END COL -->
 
         <!-- START COL -->
-        <div class="col">
+        <div class="col-10 col-lg-4 d-flex flex-column p-3">
           <label for="age">Fascia d'età</label>
           <select name="age" id="age">
             <option value="maggiorenne">Maggiorenne</option>
@@ -52,9 +55,9 @@
       <!-- END ROW -->
 
       <!-- START BOTTONS -->
-      <div>
-        <button id="create" class="">Genera</button>
-        <button id="delete" class="">Annulla</button>
+      <div class="d-flex justify-content-center py-4 ">
+        <button id="create" class="btn btn-success my_btn mx-3">Genera</button>
+        <button id="delete" class="btn btn-danger my_btn mx-3">Annulla</button>
       </div>
       <!-- END BOTTONS -->
 
@@ -67,58 +70,64 @@
 
 
   <!-- START TICKET -->
-  <section>
+  <section class="py-5">
     <div id="text">
-      <h2 id="message"></h2>
+      <h2 id="message" class="text-center fs-1"></h2>
     </div>
+
+    <!-- START CONTAINER-TICKET -->
+    <div id="ticket" class="my_container pt-5 pb-3 bg_details">
+      <h3 class="ps-2">DETTAGLI BIGLIETTO</h3>
     
-    <!-- START DIV BG-TICKET -->
-    <div id="ticket">
-      <h3>DETTAGLIO BIGLIETTO</h3>
+      <!-- START BG-TICKET -->
+      <div class="bg_ticket">
 
-      <!-- START ROW -->
-      <div class="row">
+        <!-- START ROW -->
+        <div class="row h-100">
 
-        <!-- START COL -->
-        <div class="col">
-          <h3>Nome Passeggero</h3>
-          <h4 id="js-name"></h4>
+          <!-- START COL -->
+          <div class="col-3 d-flex flex-column justify-content-around my_border">
+            <span class="fs-5 ps-2">Nome Passeggero</span>
+            <span id="js-name" class="ps-2"></span>
+          </div>
+          <!-- END COL -->
+
+          <!-- START COL -->
+          <div class="col-3 d-flex flex-column justify-content-around">
+            <span class="fs-5">Offerta</span>
+            <span id="js-offer"></span>
+          </div>
+          <!-- END COL -->
+
+          <!-- START COL -->
+          <div class="col-2 d-flex flex-column justify-content-around">
+            <span class="fs-5">Carrozza</span>
+            <span id="js-carriage"></span>
+          </div>
+          <!-- END COL -->
+
+          <!-- START COL -->
+          <div class="col-2 d-flex flex-column justify-content-around">
+            <span class="fs-5">Codice CP</span>
+            <span id="js-code"></span>
+          </div>
+          <!-- END COL -->
+
+          <!-- START COL -->
+          <div class="col-2 d-flex flex-column justify-content-around">
+            <span class="fs-5">Costo biglietto</span>
+            <span id="js-price"></span>
+          </div>
+          <!-- END COL -->
+
         </div>
-        <!-- END COL -->
-
-        <!-- START COL -->
-        <div class="col">
-          <h3>Offerta</h3>
-          <h4 id="js-offer"></h4>
-        </div>
-        <!-- END COL -->
-
-        <!-- START COL -->
-        <div class="col">
-          <h3>Carrozza</h3>
-          <h4 id="js-carriage"></h4>
-        </div>
-        <!-- END COL -->
-
-        <!-- START COL -->
-        <div class="col">
-          <h3>Codice CP</h3>
-          <h4 id="js-code"></h4>
-        </div>
-        <!-- END COL -->
-
-        <!-- START COL -->
-        <div class="col">
-          <h3>Costo biglietto</h3>
-          <h4 id="js-price"></h4>
-        </div>
-        <!-- END COL -->
+        <!-- END ROW -->
 
       </div>
-      <!-- END ROW -->
+      <!-- END BG-TICKET -->
 
     </div>
-  <!-- END DIV BG-TICKET -->
+    <!-- END CONTAINER-TICKET -->
 
   </section>
   <!-- END TICKET -->

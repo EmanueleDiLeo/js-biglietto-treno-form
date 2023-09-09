@@ -1,7 +1,60 @@
- #ticket{
+/* General */
+
+main{
+  color: rgb(226, 243, 241);
+
+}
+
+.my_container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Form */
+
+.form{
+  height: 100%;
+  padding: 50px 0;
+  background-image: url(../img/Stazione-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg_form{
+  background-color: rgba(46, 45, 44, 0.6);
+  border-radius: 20px;
+}
+
+.my_btn{
+  padding: 6px 20px;
+}
+
+/* Ticket */
+
+#ticket{
   display: none;
 }
 
 #text{
   display: block;
+  color: black;
+}
+
+.bg_details{
+  background-color: rgb(41, 115, 221);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.bg_ticket{
+  padding: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: black;
+  height:160px;
+  background-color: rgb(226, 243, 241);
+}
+
+.my_border{
+  border-right: 3px dotted black;
 }
