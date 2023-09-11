@@ -11,8 +11,8 @@ buttonCreate.addEventListener("click", function(){
   
   let price;
   let offer = "Biglietto Standard";
-  let carriage = parseInt(Math.random()  * 10);
-  let code = parseInt(Math.random() * 100000);
+  let carriage = parseInt(Math.random() * 10) + 1;
+  let code = parseInt(Math.random() * 10000) + 90000;
 
   if(isNaN(kilometres) || kilometres < 0){
     message = "Valore di kilometri non valido";
